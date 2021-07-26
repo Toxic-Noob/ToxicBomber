@@ -48,7 +48,7 @@ if(sec==K3Y):
 	
 	print("\033[92m")
 	number = input("\n[*] Enter Target Number:> +880")
-	tr1 = input("[*] Enter Amount(Default 10):> ")
+	tr1 = input("[*] Enter Amount (Default 10):> ")
 	if(tr1==""):
 		tr=10
 	else:
