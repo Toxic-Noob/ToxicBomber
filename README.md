@@ -1,1 +1,27 @@
-# This Tool Has Been Removed
+# A Powerful SMS Bombing Tool For Bangladesh Only
+
+apt update
+
+apt upgrade
+
+pkg install python
+
+pkg install python2
+
+pkg install git
+
+pip install mechanize
+
+pip install requests
+
+git clone https://github.com/Toxic-Noob/ToxicBomber
+
+cd ToxicBomber
+
+python Tbomb.py
+
+<img src="https://h.top4top.io/p_20339n9x50.jpg" alt="ToxicBomber">
+
+This tool is only for Educational Purpose
+I'm not responsible for any misuse
+Use it at your own risk
