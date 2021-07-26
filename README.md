@@ -22,6 +22,18 @@ python Tbomb.py
 
 <img src="https://h.top4top.io/p_20339n9x50.jpg" alt="ToxicBomber">
 
-This tool is only for Educational Purpose
-I'm not responsible for any misuse
-Use it at your own risk
+Updates in New Version:
+
+[*] Removed Dead APIs & Added New APIs.
+
+[*] Unlimited Bombing.
+
+[*] New Interface.
+
+[*] Bugs Fixed.
+
+[*] Upgraded To Python3.
+
+This tool is only for Educational Purpose.
+I'm not responsible for any misuse.
+Use it at your own risk.
