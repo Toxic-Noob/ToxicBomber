@@ -20,8 +20,6 @@ cd ToxicBomber
 
 python Tbomb.py
 
-<img src="https://h.top4top.io/p_20339n9x50.jpg" alt="ToxicBomber">
-
 Updates in New Version:
 
 [*] Removed Dead APIs & Added New APIs.
