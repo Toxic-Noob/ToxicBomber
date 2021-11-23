@@ -1,14 +1,12 @@
 # A Powerful SMS Bombing Tool For Bangladesh Only
 
-apt update
+apt update -y
 
-apt upgrade
+apt upgrade -y
 
-pkg install python
+pkg install python -y
 
-pkg install python2
-
-pkg install git
+pkg install git -y
 
 pip install mechanize
 
