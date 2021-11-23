@@ -38,3 +38,6 @@ apt update -y && apt upgrade -y && pkg install python git -y && pip install requ
 This tool is only for Educational Purpose.
 I'm not responsible for any misuse.
 Use it at your own risk.
+
+# Screenshot:
+<img src="https://i.top4top.io/p_2153ys9i40.jpg">
