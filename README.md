@@ -1,5 +1,10 @@
 # A Powerful SMS Bombing Tool For Bangladesh Only
 
+# [*] ToxicBomber
+# [*] Version 2.2
+
+# [*] Installation Commands :
+
 apt update -y
 
 apt upgrade -y
@@ -18,10 +23,10 @@ cd ToxicBomber
 
 python Tbomb.py
 
-# [*] Singel Installation Commands
-
+# [*] Singel Installation Commands :
+```shell script
 apt update -y && apt upgrade -y && pkg install python git -y && pip install requests && pip install mechanize && git clone https://github.com/Toxic-Noob/ToxicBomber && cd ToxicBomber && python Tbomb.py
-
+```
 # [*] Updates in New Version:
 
 [*] Removed Dead APIs & Added New APIs.
@@ -40,4 +45,4 @@ I'm not responsible for any misuse.
 Use it at your own risk.
 
 # Screenshot:
-<img src="https://i.top4top.io/p_2153ys9i40.jpg">
+<img src="https://c.top4top.io/p_2175r7wcm0.jpg" alt="ToxicBomber">
