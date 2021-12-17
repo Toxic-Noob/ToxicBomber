@@ -37,7 +37,7 @@ apt update -y && apt upgrade -y && pkg install python git -y && pip install requ
 
 [*] Bugs Fixed.
 
-[*] Upgraded To Python3.
+[*] Fixed 'No Permission' Problem.
 
 # [!] Note:
 This tool is only for Educational Purpose.
