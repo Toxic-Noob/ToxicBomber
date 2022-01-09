@@ -105,7 +105,7 @@ if(security_code==security_K3Y):
 					op = op + 1
 					check_limit()
 				else:
-					print("\033[31m    [!] Massage Send Failed\n")
+					print("\033[31m    [!] Message Send Failed\n")
 					time.sleep(4)
 					
 		if(op==tr):
@@ -117,7 +117,7 @@ if(security_code==security_K3Y):
 		        op=op+1
 		        check_limit()
 		    else:
-		        print("\033[31m    [!] Massege Send Failed!\n")
+		        print("\033[31m    [!] Message Send Failed!\n")
 		        time.sleep(4)
 		except:
 			time.sleep(4)
@@ -136,7 +136,7 @@ if(security_code==security_K3Y):
 		    		op=op+1
 		    		check_limit()
 		    	else:
-		    		print("\033[31m    [!] Massage Send Failed!\n")
+		    		print("\033[31m    [!] Message Send Failed!\n")
 		    		time.sleep(4)
 		except:
 			time.sleep(4)
@@ -150,7 +150,7 @@ if(security_code==security_K3Y):
 				op=op+1
 				check_limit()
 			else:
-				print("\033[31m    [!] Massage Send Failed!\n")
+				print("\033[31m    [!] Message Send Failed!\n")
 				time.sleep(4)
 		except:
 			time.sleep(4)
@@ -164,7 +164,7 @@ if(security_code==security_K3Y):
 				op=op+1
 				check_limit()
 			else:
-				print("\033[31m    [!] Massage Send Failed!")
+				print("\033[31m    [!] Message Send Failed!")
 				time.sleep(4)
 		except:
 			time.sleep(4)
@@ -177,7 +177,7 @@ if(security_code==security_K3Y):
 			op=op+1
 			check_limit()
 		except:
-			print("\033[31m    [!] Massage Send Failed!")
+			print("\033[31m    [!] Message Send Failed!")
 			time.sleep(4)
 
 		if(op==tr):
@@ -189,7 +189,7 @@ if(security_code==security_K3Y):
 				op=op+1
 				check_limit()
 			else:
-				print("\033[31m    [!] Massage Send Failed!")
+				print("\033[31m    [!] Message Send Failed!")
 				time.sleep(4)
 		except:
 			time.sleep(4)
@@ -203,7 +203,7 @@ if(security_code==security_K3Y):
 				op=op+1
 				check_limit()
 			else:
-				print("\033[31m    [!] Massage Send Failed!")
+				print("\033[31m    [!] Message Send Failed!")
 				time.sleep(4)
 		except:
 			time.sleep(4)
@@ -217,7 +217,7 @@ if(security_code==security_K3Y):
 					op = op + 1
 					check_limit()
 			else:
-					print("\033[31m	[!] Massege Send Failed!\n")
+					print("\033[31m	[!] Message Send Failed!\n")
 					time.sleep(4)
 
 else:
