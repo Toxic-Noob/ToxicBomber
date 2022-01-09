@@ -46,3 +46,9 @@ Use it at your own risk.
 
 # Screenshot:
 <img src="https://c.top4top.io/p_2175r7wcm0.jpg" alt="ToxicBomber">
+
+<br><br>
+<h3><b><i>Visitors :</i></b></h3>
+
+
+![Visitor Count](https://profile-counter.glitch.me/Toxic-Noob/count.svg)
