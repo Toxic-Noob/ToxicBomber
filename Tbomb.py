@@ -268,6 +268,6 @@ def main():
             time.sleep(4)
 
 if __name__ == "__main__":
-    version(verFile = ".version", RepoURL = "https://github.com/Toxic-Noob/ToxicBomber", RepoFile = "Tbomb.py")
+    version(verFile = "libs/.version", RepoURL = "https://github.com/Toxic-Noob/ToxicBomber", RepoFile = "Tbomb.py")
     logo()
     main()
