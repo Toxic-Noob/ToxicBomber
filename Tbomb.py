@@ -1,17 +1,17 @@
-###################################
+#########################################
 # Author : ToxicNoob
 # GitHub : https://github.com/Toxic-Noob/
 # Coder   : HunterSl4d3
 # Learn Everything, Teach Everyone!!
-###################################
+#########################################
 
 import time
 import requests
 import mechanize
 import sys
 import os
-from lib import toxic
-from lib.version import *
+from libs import toxic
+from libs.version import *
 
 def logopsb(z):
     for e in z + '\n':
