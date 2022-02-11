@@ -41,7 +41,7 @@ apt update -y && apt upgrade -y && pkg install python git -y && pip install requ
 #### Use it at your own risk.
 
 # Screenshot:
-![Toxicbomber](https://i.top4top.io/p_22293x3cy0.jpg)
+<img src="https://i.top4top.io/p_22293x3cy0.jpg" alt="ToxicBomber">
 
 ### Visitors :
 
