@@ -37,17 +37,17 @@ def check_limit(op):
         return False
 
 def inp_number():
-    number = input("\033[92m\n    [*] Enter Target Number:> \033[37m").replace("+880", "").replace("880", "")
+    number = input("\033[92m\n    [*] Enter Target Number:> \033[37m").replace("+880", "")
     try:
         int(number)
     except:
         psb("\n\033[91m    [!] Wrong Number!!")
         psb("    [!] Input Number As : 01xxxxxxxxx")
-        number = input("\033[92m\n    [*] Enter Target Number:> \033[37m").replace("+880", "").replace("880", "")
+        number = input("\033[92m\n    [*] Enter Target Number:> \033[37m").replace("+880", "")
     while not (len(number) == 11):
         psb("\n\033[91m    [!] Wrong Number!!")
         psb("    [!] Input Number As : 01xxxxxxxxx")
-        number = input("\033[92m\n    [*] Enter Target Number:> \033[37m").replace("+880", "").replace("880", "")
+        number = input("\033[92m\n    [*] Enter Target Number:> \033[37m").replace("+880", "")
     number = number[-10:]
     return number
 
