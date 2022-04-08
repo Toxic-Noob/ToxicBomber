@@ -40,6 +40,11 @@ apt update -y && apt upgrade -y && pkg install python git -y && pip install requ
 #### I'm not responsible for any misuse.
 #### Use it at your own risk.
 
+## Contact :
+[*] Contact <a href="https://facebook.com/ToxicNoobOfficial">ToxicNoob</a> Via Email:
+
+ContactWithToxicNoob@gmail.com
+
 # Screenshot:
 <img src="https://i.top4top.io/p_22293x3cy0.jpg" alt="ToxicBomber">
 
