@@ -28,7 +28,7 @@ python Tbomb.py
 ## Contact :
 For Any Help or Suggestions, Contact With Us:
 <li> Via <a href="https://facebook.com/ToxicNoobOfficial">Facebook Page</a>
-<li> Via <a href="ContactWithToxicNoob@gmail.com">Email</a>
+<li> Via <a href="mailto: ContactWithToxicNoob@gmail.com">Email</a>
 
 
 # Screenshot:
