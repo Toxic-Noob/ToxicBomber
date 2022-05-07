@@ -1,54 +1,39 @@
-# ToxicBomber V2.4
-### A Powerfull SMS Bombing Tool For Bangladeshi Users Only..
+<img src="https://a.top4top.io/p_23181ith60.jpg" alt="ToxicBomber">
+Most Updated SMS Bomber For Bangladeshi Numbers
 
-## [*] Installation Commands :
+### Version 3.0 Updates:
+<li>New Interface</li>
+<li>Removed Dead APIs</li>
+<li>Added New API</li>
+<li>Unlimited Bombing</li>
+<li>Removed Bugs</li>
 
+### Installation Commands :
+``` shell script
 apt update -y
-
 apt upgrade -y
-
 pkg install python -y
-
 pkg install git -y
-
-pip install mechanize
-
 pip install requests
-
 git clone https://github.com/Toxic-Noob/ToxicBomber
-
 cd ToxicBomber
-
 python Tbomb.py
-
-## [*] Singel Installation Commands :
-```shell script
-apt update -y && apt upgrade -y && pkg install python git -y && pip install requests && pip install mechanize && git clone https://github.com/Toxic-Noob/ToxicBomber && cd ToxicBomber && python Tbomb.py
 ```
-# [*] Updates in New Version:
 
-[*] Removed Dead APIs & Added New APIs.
-
-[*] Unlimited Bombing.
-
-[*] New Interface.
-
-[*] Bugs Fixed.
-
-# [!] Note:
-#### This tool is only for Educational Purpose.
-#### I'm not responsible for any misuse.
-#### Use it at your own risk.
+## Note:
+<li>This Tool Is Only For Educational Purpose</li>
+<li>ToxicNoob Will Never Be Responsible For Any Misuse</li>
+<li>Use It At Your Own Risk</li>
 
 ## Contact :
-[*] Contact <a href="https://facebook.com/ToxicNoobOfficial">ToxicNoob</a> Via Email:
+For Any Help or Suggestions, Contact With Us:
+<li> Via <a href="https://facebook.com/ToxicNoobOfficial">Facebook Page</a>
+<li> Via <a href="ContactWithToxicNoob@gmail.com">Email</a>
 
-ContactWithToxicNoob@gmail.com
 
 # Screenshot:
 <img src="https://i.top4top.io/p_22293x3cy0.jpg" alt="ToxicBomber">
 
 ### Visitors :
-
 
 ![Visitor Count](https://profile-counter.glitch.me/Toxic-Noob/count.svg)
