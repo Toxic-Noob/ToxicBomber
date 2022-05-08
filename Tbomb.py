@@ -146,7 +146,8 @@ def main():
         int(delay)
     except:
         delay = 2
-    main.delay = delay
+    
+    main.delay = int(delay)
     
     time.sleep(1)
     logo()
