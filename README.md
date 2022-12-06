@@ -1,10 +1,10 @@
 <img src="https://a.top4top.io/p_23181ith60.jpg" alt="ToxicBomber">
 Most Updated SMS Bomber For Bangladeshi Numbers
 
-# Note:
-This tool is not Updated. For Python Updates, there was being some version error. Just solved that version error.
-
-So, don't be excited about the Update😅. This is the same old ToxicBomber.
+### Version 4.0 Updates:
+<li>Done Some Mejor Changes of Source Files</li>
+<li>Dead APIs Removed</li>
+<li>New APIs added</li>
 
 ### Version 3.0 Updates:
 <li>New Interface</li>
@@ -32,8 +32,7 @@ python Tbomb.py
 
 ## Contact :
 For Any Help or Suggestions, Contact With Us:
-<li> Via <a href="https://facebook.com/ToxicNoobOfficial">Facebook Page</a>
-<li> Via <a href="mailto: ContactWithToxicNoob@gmail.com">Email</a>
+<li> Via <a href="mailto: ToxicNoob.Sl4d3.Official@gmail.com">Email</a>
 
 
 # Screenshot:
