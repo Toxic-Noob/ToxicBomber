@@ -1,1 +1,7 @@
-
+{
+    "tool": "ToxicBomber",
+    "author": "ToxicNoob Inc.",
+    "github": "https://github.com/toxic-noob",
+    "version": "0.0.1",
+    "message": "Testing...."
+}
