@@ -5,6 +5,7 @@ Most Updated SMS Bomber For Bangladeshi Numbers
 <li>Done Some Mejor Changes of Source Files</li>
 <li>Dead APIs Removed</li>
 <li>New APIs added</li>
+<li>Supports Python 3.11</li>
 
 ### Version 3.0 Updates:
 <li>New Interface</li>
