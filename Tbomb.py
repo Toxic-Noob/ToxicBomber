@@ -77,7 +77,7 @@ def update():
     if (toolVersion != mainVersion):
         psb("\n    \033[92m[\033[37m!\033[92m] \033[37mTool Update Found!")
         time.sleep(0.5)
-        psb("\033[92m[\033[37m!\033[92m] \033[37mUpdating Tool: ", end="")
+        psb("    \033[92m[\033[37m!\033[92m] \033[37mUpdating Tool: ", end="")
         
         os.system("cd .. && rm -rf ToxicBomber && git clone https://github.com/Toxic-Noob/ToxicBomber > /dev/null 2>&1")
         
@@ -90,7 +90,7 @@ def update():
     elif (apiVersion != mainApiVersion):
         psb("\n    \033[92m[\033[37m!\033[92m] \033[37mAPI Data Update Found!")
         time.sleep(0.5)
-        psb("\033[92m[\033[37m!\033[92m] \033[37mUpdating Data: ", end="")
+        psb("    \033[92m[\033[37m!\033[92m] \033[37mUpdating Data: ", end="")
         
         os.system("rm ./more/data.py && curl https://raw.githubusercontent.com/Toxic-Noob/ToxicBomber/main/more/data.py > ./more/data.py")
         
