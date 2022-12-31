@@ -3,7 +3,7 @@
 # A Bangladeshi SMS Bomber Tool
 # Author: ToxicNoob Inc.
 # GitHub: https://github.com/Toxic-Noob
-# Version: 4.0.0
+# Version: 4.1.0
 #########################################
 
 import time
@@ -51,8 +51,10 @@ def showAuthorMsg(msg):
 def update():
     try:
         toolVersion = json.loads(open("./more/.version", "r").read())["version"]
+        apiVersion = json.loads(open("./more/.version", "r").read())["apiVersion"]
     except:
         toolVersion = "ToxicNoob"
+        apiVersion = "ToxicNoob"
     
     try:
         authorMsg = open("./more/.msg", "r").read().replace("\n", "")
@@ -68,9 +70,10 @@ def update():
         update()
     
     mainVersion = parsedData["version"]
+    mainApiVersion = parsedData["apiVersion"]
     newMsg = parsedData["message"]
     
-    #If Tool Version Is Same, Then Return/Close Function
+    # If Tool Version Is not Same, Update Tool
     if (toolVersion != mainVersion):
         psb("\n    \033[92m[\033[37m!\033[92m] \033[37mTool Update Found!")
         time.sleep(0.5)
@@ -84,8 +87,22 @@ def update():
         
         os.system("cd .. && cd ToxicBomber && python Tbomb.py")
     
+    elif (apiVersion != mainApiVersion):
+        psb("\n    \033[92m[\033[37m!\033[92m] \033[37mAPI Data Update Found!")
+        time.sleep(0.5)
+        psb("\033[92m[\033[37m!\033[92m] \033[37mUpdating Data: ", end="")
+        
+        os.system("rm ./more/data.py && curl https://raw.githubusercontent.com/Toxic-Noob/ToxicBomber/main/more/data.py > ./more/data.py")
+        
+        print("\033[37mDone")
+        psb("    \033[92m[\033[37m*\033[92m] \033[37mRestarting Tool...")
+        time.sleep(0.8)
+        
+        os.system("python Tbomb.py")
+        sys.exit()
+    
     else:
-        if (authorMsg != newMsg):
+        if (authorMsg != newMsg) and (newMsg != "blank"):
             showAuthorMsg(newMsg)
 
 
@@ -101,30 +118,21 @@ def logo():
     print("\033[94m│ \033[95mAuthor : ToxicNoob Inc.                \033[94m│".center(columns+15))
     print("│ \033[95mTool   : Unlimited SMS Bomber          \033[94m│".center(columns+9))
     print("│ \033[95mGitHub : https://github.com/Toxic-Noob \033[94m│".center(columns+9))
-    print("│ \033[95mCoder  : HunterSl4d3              \033[37mV4.0 \033[94m│".center(columns+15))
+    print("│ \033[95mCoder  : HunterSl4d3              \033[37mV4.1 \033[94m│".center(columns+15))
     print("\033[94m└────────────────────────────────────────┘".center(columns+5))
 
 
-#Options Banner
+# Options Banner
 def banner():
     amount = str(main.amount)
-    if (len(amount) == 1):
-        amount = amount + "                    "
-    elif (len(amount) == 2):
-        amount = amount + "                   "
-    elif (len(amount) == 3):
-        amount = amount + "                  "
-    elif (len(amount) == 4):
-        amount = amount + "                 "
-    else:
-        amount = amount + "                "
+    # 21 - 1(lenOfAmount) = 20....
+    amount = amount + (" " * (21-len(amount)))
     
     print("\033[95m-" * (columns), end = "")
     print(("\033[92mTarget  : \033[37m0" + main.number + "          ").center(columns + 10))
     print(("\033[92mAmount  : \033[37m" + amount).center(columns + 10))
     print("\033[92mProcess : \033[37mStarted               ".center(columns + 10))
     print("\033[92mNote    : \033[37mPress ctrl + z To Stop".center(columns + 10))
-    #print(" ", end="")
     print("\033[95m-" * (columns), end = "")
     print("\n")
 
@@ -134,7 +142,10 @@ def check(sent):
     amount = main.amount
     delay = main.delay
     
-    print("\r\033[92m    [\033[94m#\033[92m] Massage Sent : \033[94m[\033[37m" + str(sent) + "\033[94m]\033[37m", end="")
+    localTime = time.localtime()
+    current_time = time.strftime("%I:%M:%S", localTime)
+
+    print(f"\r\033[92m    [\033[94m {current_time} \033[92m] Message Sent : \033[94m[\033[37m{sent}\033[94m]\033[37m", end="")
     
     if (sent == amount):
         psb("\n\n\033[92m    [\033[37m*\033[92m] Bombing Finished!")
@@ -190,90 +201,23 @@ def main():
     logo()
     banner()
     sent = 0
+    
+    items = RUNNABLE_ITEMS
+    finished = False
+    
+    # Running through all apis using Global Variables
+    allFuncs = globals()
     while True:
-        success = api_1(number)
-        if (success):
-            sent += 1
-            if(check(sent)):
-                break
+        for i in range(1, items+1):
+            success = allFuncs["api_"+str(i)](number)
+            if (success):
+                sent += 1
+                if(check(sent)):
+                    finished = True
+                    break
         
-        success = api_2(number)
-        if (success):
-            sent += 1
-            if(check(sent)):
-                break
-        
-        success = api_3(number)
-        if (success):
-            sent += 1
-            if(check(sent)):
-                break
-        
-        success = api_4(number)
-        if (success):
-            sent += 1
-            if(check(sent)):
-                break
-        
-        success = api_5(number)
-        if (success):
-            sent += 1
-            if(check(sent)):
-                break
-        
-        success = api_6(number)
-        if (success):
-            sent += 1
-            if(check(sent)):
-                break
-        
-        success = api_7(number)
-        if (success):
-            sent += 1
-            if(check(sent)):
-                break
-        
-        success = api_8(number)
-        if (success):
-            sent += 1
-            if(check(sent)):
-                break
-        
-        success = api_9(number)
-        if (success):
-            sent += 1
-            if(check(sent)):
-                break
-        
-        success = api_10(number)
-        if (success):
-            sent += 1
-            if(check(sent)):
-                break
-        
-        success = api_11(number)
-        if (success):
-            sent += 1
-            if(check(sent)):
-                break
-        
-        success = api_12(number)
-        if (success):
-            sent += 1
-            if(check(sent)):
-                break
-        
-        success = api_13(number)
-        if (success):
-            sent += 1
-            if(check(sent)):
-                break
-        
-        success = api_14(number)
-        if (success):
-            sent += 1
-            if(check(sent)):
-                break
+        if (finished):
+            break
 
 
 # Start Ruuning Tool
