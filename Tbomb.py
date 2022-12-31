@@ -51,10 +51,8 @@ def showAuthorMsg(msg):
 def update():
     try:
         toolVersion = json.loads(open("./more/.version", "r").read())["version"]
-        apiVersion = json.loads(open("./more/.version", "r").read())["apiVersion"]
     except:
         toolVersion = "ToxicNoob"
-        apiVersion = "ToxicNoob"
     
     try:
         authorMsg = open("./more/.msg", "r").read().replace("\n", "")
@@ -70,7 +68,6 @@ def update():
         update()
     
     mainVersion = parsedData["version"]
-    mainApiVersion = parsedData["apiVersion"]
     newMsg = parsedData["message"]
     
     # If Tool Version Is not Same, Update Tool
@@ -86,20 +83,6 @@ def update():
         time.sleep(0.8)
         
         os.system("cd .. && cd ToxicBomber && python Tbomb.py")
-    
-    elif (apiVersion != mainApiVersion):
-        psb("\n    \033[92m[\033[37m!\033[92m] \033[37mAPI Data Update Found!")
-        time.sleep(0.5)
-        psb("    \033[92m[\033[37m!\033[92m] \033[37mUpdating Data: ", end="")
-        
-        os.system("rm ./more/data.py && curl https://raw.githubusercontent.com/Toxic-Noob/ToxicBomber/main/more/data.py > ./more/data.py")
-        
-        print("\033[37mDone")
-        psb("\n    \033[92m[\033[37m*\033[92m] \033[37mRestarting Tool...")
-        time.sleep(0.8)
-        
-        os.system("python Tbomb.py")
-        sys.exit()
     
     else:
         if (authorMsg != newMsg) and (newMsg != "blank"):
