@@ -164,7 +164,7 @@ def check(sent):
 
 #Get Target Number
 def getNumber():
-    number = input("\n    \033[92m[\033[37m*\033[92m] \033[37mEnter Target Number:> \033[37m")
+    number = input("\n    \033[92m[\033[37m*\033[92m] \033[37mEnter Target (\033[92mWithout +88\033[37m):> \033[37m")
     if not number.isdigit():
         psb("\n    \033[92m[\033[91m!\033[92m] \033[37mPlease Enter a Correct Number!")
         number = getNumber()
@@ -181,7 +181,7 @@ def main():
     number = number[-10:]
     main.number = number
     
-    amount = input("    \033[92m[\033[37m*\033[92m] \033[37mEnter Amount (\033[37mDefault: 10\033[37m):> \033[37m")
+    amount = input("    \033[92m[\033[37m*\033[92m] \033[37mEnter Amount (\033[92mDefault: 10\033[37m):> \033[37m")
     try:
         amount = int(amount)
     except:
@@ -191,11 +191,11 @@ def main():
     
     delay = input("    \033[92m[\033[37m*\033[92m] \033[37mEnter Time(\033[92mSec\033[37m) Delay (\033[92mDefault: 2s\033[37m):> \033[37m")
     try:
-        int(delay)
+        delay = int(delay)
     except:
         delay = 2
     
-    main.delay = int(delay)
+    main.delay = delay
     
     time.sleep(1)
     logo()
@@ -207,6 +207,9 @@ def main():
     
     # Running through all apis using Global Variables
     allFuncs = globals()
+    if check(sent):
+        sys.exit()
+    
     while True:
         for i in range(1, items+1):
             success = allFuncs["api_"+str(i)](number)
@@ -215,7 +218,7 @@ def main():
                 if(check(sent)):
                     finished = True
                     break
-        
+            
         if (finished):
             break
 
