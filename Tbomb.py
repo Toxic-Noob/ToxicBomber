@@ -42,7 +42,7 @@ def showAuthorMsg(msg):
     print("\033[94m-"*columns, end="", flush=1)
     print()
     open("./more/.msg", "w").write(msg)
-    time.sleep(2)
+    time.sleep(1)
     input("\n    \033[92m[\033[37m*\033[92m] \033[37mPress Enter To Continue...")
     logo()
 
@@ -82,7 +82,7 @@ def update():
         os.system("cd .. && rm -rf ToxicBomber && git clone https://github.com/Toxic-Noob/ToxicBomber > /dev/null 2>&1")
         
         print("\033[37mDone")
-        psb("    \033[92m[\033[37m*\033[92m] \033[37mStarting Tool...")
+        psb("\n    \033[92m[\033[37m*\033[92m] \033[37mStarting Tool...")
         time.sleep(0.8)
         
         os.system("cd .. && cd ToxicBomber && python Tbomb.py")
@@ -95,7 +95,7 @@ def update():
         os.system("rm ./more/data.py && curl https://raw.githubusercontent.com/Toxic-Noob/ToxicBomber/main/more/data.py > ./more/data.py")
         
         print("\033[37mDone")
-        psb("    \033[92m[\033[37m*\033[92m] \033[37mRestarting Tool...")
+        psb("\n    \033[92m[\033[37m*\033[92m] \033[37mRestarting Tool...")
         time.sleep(0.8)
         
         os.system("python Tbomb.py")
