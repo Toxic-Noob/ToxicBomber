@@ -8,18 +8,12 @@ rm -rf ToxicBomber
 ```
 In your Terminal
 
-### Version 4.0 Updates:
+### Version 4.1 Updates:
 <li>Done Some Mejor Changes of Source Files</li>
 <li>Dead APIs Removed</li>
 <li>New APIs added</li>
+<li>Timer Added</li>
 <li>Supports Python 3.11</li>
-
-### Version 3.0 Updates:
-<li>New Interface</li>
-<li>Removed Dead APIs</li>
-<li>Added New API</li>
-<li>Unlimited Bombing</li>
-<li>Removed Bugs</li>
 
 ### Commands :
 To remove the old Version:
@@ -50,8 +44,9 @@ For Any Help or Suggestions, Contact With Us:
 <li> Via <a href="mailto: ToxicNoob.Sl4d3.Official@gmail.com">Email</a>
 
 
-# Screenshot:
-<img src="https://c.top4top.io/p_23185bxls0.jpg" alt="ToxicBomber">
+# Screenshots:
+<img src="https://a.top4top.io/p_2556qdsww0.jpg" alt="ToxicBomber ScreenShot">
+<img src="https://c.top4top.io/p_2556dzaf30.jpg" alt="ToxicBomber ScreenShot">
 
 ### Visitors :
 
